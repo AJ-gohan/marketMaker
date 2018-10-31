@@ -1,27 +1,19 @@
+ // ##### VARIABLES #####
 const token = 'Token';
 const symbol = 'BTCUSD';
-
-//DO NOT CHANGE//
 const order_margin = 0.01;
 const maximum_exposure = 0.1;
-
-// VARIABLES
 const spread_short = 0.3;
 const spread_long = 0.2;
-
 const leverage = 10;
 
 // ##### REQUIRES #####
-
 const FoxHttps = require('foxhttps');
 const FoxSocket = require('foxsocket');
 
-
  // ##### VARIABLES #####
-
 var foxSocket = null;
 var foxHttps = new FoxHttps(token);
-
 var last_update = 0;
 var index_poll = null;
 var index_price = null;
